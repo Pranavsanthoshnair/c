@@ -1,3 +1,8 @@
+/*
+Author - Pranav S Nair
+Date - 5/2/25
+Purpose - TO sort array using bubble sort and print
+*/
 #include <stdio.h>
 int main() {
     int n, i, j, temp;
