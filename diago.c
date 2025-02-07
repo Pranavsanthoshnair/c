@@ -1,6 +1,6 @@
 /*
 Pranav S Nair
-05/02/2025
+07/02/2025
 Purpose - To make diagonal elements of matrix 0
 */
 
