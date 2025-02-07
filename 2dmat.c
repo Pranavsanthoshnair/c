@@ -1,6 +1,6 @@
 /*
 Pranav S Nair
-05/02/2025
+07/02/2025
 Purpose - C program to find sum of elements of diagonal elements in matrix
 */
 #include<stdio.h>
