@@ -7,7 +7,7 @@ Purpose - To print reverse of a string without inbuilt functions.
 int main(){
     char str[50],temp;
     printf("Enter a string:");
-    scanf("%s", str);
+    fgets(str,50,stdin);
     int i,l,j;
     for(i=0;str[i]!='\0';i++);
     l=i-1;
