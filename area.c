@@ -18,7 +18,7 @@ int main(){
     printf("Enter height of cylinder:");
     scanf("%d",&h);
     areacy = AreaCylinder;
-    printf("The area of the circle is :%d",areacy);
+    printf("The area of the cylinder is :%d",areacy);
     return 0;
 }
     
