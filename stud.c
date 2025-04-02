@@ -1,18 +1,21 @@
 #include <stdio.h>
+
 struct Student {
     char name[50];
     int rn;
     float marks[3];
 };
+
 int main() {
     int n;
     printf("Enter number of students: ");
     scanf("%d", &n);
     struct Student s[n];
     float sub[3] = {0};
+    float totalMarks = 0;
     for (int i = 0; i < n; i++) {
         printf("\nEnter name: ");
-        scanf("%s", s[i].name); 
+        scanf("%s", s[i].name);
         printf("Enter roll number: ");
         scanf("%d", &s[i].rn);
         printf("Enter marks for 3 subjects: ");
@@ -22,14 +25,17 @@ int main() {
             total += s[i].marks[j];
             sub[j] += s[i].marks[j];
         }
-        float average = total / 3;
-        printf("Total Marks: %.2f, Average Marks: %.2f\n", total, average);
+        totalMarks += total;
+        printf("Total Marks: %.2f\n", total);
     }
-    printf("\nAverage marks for each subject:\n");
+
+    printf("\nTotal Marks for each subject:\n");
     for (int j = 0; j < 3; j++) {
-        printf("Subject %d average: %.2f\n", j + 1, sub[j] / n);
-        printf("Subject %d total marks: %.2f\n", j + 1, sub[j]);
+        printf("Subject %d: %.2f\n", j+1, sub[j]);
     }
+
+    printf("Overall Total Marks for all students: %.2f\n", totalMarks);
+    printf("Overall Average Marks: %.2f\n", totalMarks / (n * 3));
+
     return 0;
 }
-
