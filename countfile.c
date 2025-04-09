@@ -18,7 +18,7 @@ int main() {
             words++;
         }
     }
-    printf("Words: %d\n", words);
+    printf("Words: %d\n", words+1);
     printf("Characters: %d\n", characters);
     printf("Lines: %d\n", lines);
     fclose(fp);
